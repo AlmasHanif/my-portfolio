@@ -1,0 +1,411 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* navbar section */
+
+/* 
+ul{
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul > li{
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  display: none;
+
+  
+} */
+
+
+.nav-link:hover{
+  /* display: block !important; */
+  border-radius: 30px;
+  background-color: rgba(196, 25, 196, 0.4);
+  transition: all ease 0.3s;
+}
+/* 
+.nav-link:nth-child(2):hover ul li{
+  display: block;
+  color: darkslategray;
+} */
+/* 
+ul > li > a{
+  text-decoration: none;
+  padding: 15px 20px;
+  color: black;
+  font-size: 18px;
+}
+ul > li:hover{
+  background-color: blue;
+
+}
+ul > li > ul{
+  padding: 0;
+  position: absolute;
+  top: 70px;
+  left: 100%;
+  width: 250px;
+  display: none;
+  visibility: hidden;
+}
+ul > li > ul > li{
+  background-color:white;
+  display: block;
+}
+ul > li > ul > li:hover{
+  background-color: coral;
+}
+ul > li:hover ul{
+  display: block;
+  visibility:visible;
+}
+ul > ul > ul > li{
+  display: none;
+}
+ul > ul > li:hover li{
+  display: block;
+}
+
+ul > ul {
+  left: 100%;
+  top: 0;
+} */
+
+
+
+.navbar{
+  background-color: rgba(31, 26, 26, 0.9);
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar-brand{
+  font-size: 30px !important;
+  font-weight: bold;
+}
+
+
+.nav-link {
+  font-size: 20px;
+  margin-left: 50px;
+ 
+}
+.icons-div{
+  display: flex;
+  text-align: center;
+  
+  /* background-color: chartreuse; */
+}
+/* 
+.nav-link:hover {
+  background-color: rgb(64, 106, 185) !important;
+} */
+.cart, .user{
+  font-size: 25px;
+  color: whitesmoke;
+  margin: 10px;
+}
+#cart-box{
+  width: auto !important;
+  height: auto;
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  display: none ;
+  background-color: rgb(230, 230, 245);
+}
+
+
+.fa-times{
+  font-size: 30px;
+  
+}
+
+table tr th{
+  /* background-color: rgb(78, 78, 255); */
+  /* display: inline-block; */
+  padding:  10px ;
+  font-size: 23px; 
+  border: 1px solid grey;
+  font-weight: 450;
+  text-align: center;
+}
+
+/* Slider section */
+
+.slider-img img{
+  width: 100%;
+  border: 5px solid black !important;
+  height: 500px !important;
+}
+#slider-img{
+  width: 100%;
+  height: 100vh;
+}
+
+/*  
+.slider-div{
+  position: relative;
+}
+
+
+.slider1-text{
+  background-color: chartreuse;
+  margin-top: 200px;
+  position: absolute;
+}  */
+.slider1-text h3{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 70px;
+  color: rgb(29, 26, 26);
+  transition: all 0.3s;
+}
+.slider1-text p {
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(9, 7, 7) ;
+}
+
+/* .carousel-caption{
+  position: relative;
+  text-align: left !important;
+  top: 200px;
+  margin-left: -100px;
+} */
+.signup-btn{
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 40px;
+}
+
+/* Collections styling */
+.text-div{
+  
+  display: flex;
+  justify-content: space-between;
+  
+}
+h1 .collec-head{
+  text-decoration: none;
+  color: rgb(53, 51, 51);
+  
+}
+.shop-btn{
+  padding: 5px;
+  display: flex;
+  border: none;
+  border: 2px solid rgb(85, 81, 81);
+  border-radius: 35px;
+  color: #eeeeee;
+  background-color:grey;
+  font-size: 20px;
+}
+.shop-btn a{
+  text-decoration: none !important;
+  
+}
+
+
+/* Cards section */
+.card{
+  margin: 12px;
+  /* height: 100px; */
+  
+}
+.card img{
+  width: 100%;
+  height: 250px;
+}
+.card-img-top:hover{
+  transition: all 5s;
+  
+}
+#add-cart{
+  background-color: white !important;
+  color: lightgrey;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border: 2px solid grey;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* display: none; */
+
+}
+#add-cart span{
+  font-size: 18px;
+  font-weight: 500;
+}
+#add-cart:hover{
+  /* display: block !important; */
+  background-color: rgb(5, 75, 39) !important;
+  color: #eeeeee;
+}
+.card:hover{
+  cursor: pointer;
+}
+/* modal image size */
+.modalImg{
+  width: 300px;
+  height: 300px;
+}
+/* input .inp{
+  width: 10px !important;
+  background-color: aqua;
+} */
+.fa-heart{
+  font-size: 20px;
+}
+
+.top-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.top-btn button{
+  width: 120px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 5px 5px 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Review section */
+
+.form-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 65px 0px 10px;
+  padding: 0px 20px 0px 20px;
+}
+
+.form-group {
+  margin: 10px;
+  font-weight: 600;
+  margin: 5px 10px 5px 10px;
+  padding: 0px 20px 0px 20px;
+}
+
+.background {
+  background-color: #eeeeee;
+  max-width: 100%;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.button-form {
+  background-color: black;
+  border: black solid;
+  color: white;
+  padding: 3px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 15px 2px 30px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  
+}
+
+.button-form:hover {
+  background-color: #eeeeee;
+  border: black solid;
+  color: black;
+  padding: 3px 25px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 15px 2px 30px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  
+}
+
+img.publications-img {
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 100%;
+  /* align-items: center; */
+}
+
+/*Footer section*/
+.footer {
+  background-color:rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h4 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li  a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: gray;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  display: inline-block;
+  /* background-color: white; */
+  margin: 10px;
+}
+.social-icon i{
+  font-size: 20px;
+}
+.social-icon i:hover{
+  font-size: 30px;
+}
+
+hr.hr-footer {
+  border: 0;
+  border-top: .25px solid white;
+  border-bottom: 0px solid white;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px 0px 30px;
+	font-size: 14px;
+}

@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #131419;
+}
+
+#container{
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom,#2b2b47 10% ,#181926);
+    border-radius:20px ;
+    padding:30px;
+}
+#starting-page{
+    height: 220px;
+    width: 400px;
+    display: block;
+    /* display: none; */
+}
+#starting-page h2,
+#winner h2{
+    font-size: 50px;
+    color: #cdcfbd;
+}
+#starting-page #line{
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background: #c3cfbd;
+}
+#starting-page h4{
+    font-size: 25px;
+    color: #b9b9c5;
+
+}
+#starting-page #btn{
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+#btn button{
+    height: 55px;
+    width: 180px;
+    cursor: pointer;
+    background: #29cde0;
+    border: none;
+    outline: none;
+    color: #2b2b47;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius:10px ;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 0 ;
+}
+#btn button:first-child{
+    margin-right: 40px;
+}
+#starting-page #btn button:hover,
+#winner #btn button{
+    transform: scale(0.90);
+}
+#winner{
+    display: none;
+}
+
+#winner #btn{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#winner #btn button{
+
+    margin-top: 20px;
+}
+#main-page{
+    height: 550px;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+#main-page #head-btns{
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px rgb(255  255  255 / 26%) , -2px -2px 5px rgb(0  0  0 / 87%);
+
+}
+#main-page #head-btns button{
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* text-shadow: ; */
+}
+#main-page #head-btns #O-turn{
+    left: 160px;
+    z-index: 3;
+}
+#show-change{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background: #29cde0;
+    z-index: 1;
+    transition: 0.2s;
+}
+#gameboard{
+    height: 400px;
+    width: 330px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap:15px;
+}
+.boxes{
+    height: 100px;
+    width: 100px;
+    display: grid;
+    /* border: 2px solid black; */
+    place-items: center;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%) , -2px -2px 5px rgb(0  0  0 / 87%);
+
+}
+.boxes i{
+    font-size: 60px;
+    color: #29cde0;
+}
